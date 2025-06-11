@@ -1,3 +1,4 @@
+import 'package:ecoshopping_ecommerce/screens/cart/cart_screen.dart';
 import 'package:ecoshopping_ecommerce/screens/home/components/search_field.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +22,7 @@ class HomeHeader extends StatelessWidget {
           //Configuracion de la campana
           IconBtnWithCounter(
             svgSrc: "assets/icons/cart-outline.svg",
-            press: () {},
+            press: () => Navigator.pushNamed(context, CartScreen.routeName),
           ),
           IconBtnWithCounter(
             svgSrc: "assets/icons/bell-outline.svg",

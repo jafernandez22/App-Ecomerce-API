@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Product {
+  final int id;
   final String title, descripcion;
   final List<String> images;
   final List<Color> colors;
@@ -8,6 +9,7 @@ class Product {
   final bool isFavourite, isPopular;
 
   Product({
+    required this.id,
     required this.images,
     required this.colors,
     this.rating = 0.0,
@@ -22,6 +24,7 @@ class Product {
 //Productos de Prueba
 List<Product> demoProducts = [
   Product(
+    id: 1,
       images: [
         "assets/images/mando1prueba.jpg",
         "assets/images/mando2prueba.jpg",
@@ -42,6 +45,7 @@ List<Product> demoProducts = [
     isPopular: true,
   ),
   Product(
+    id: 2,
       images: [
         "assets/images/mando2prueba.jpg"
       ],
@@ -58,6 +62,7 @@ List<Product> demoProducts = [
     isPopular: true,
   ),
   Product(
+    id: 3,
     images: [
       "assets/images/laptopprueba.jpg"
     ],
@@ -75,6 +80,7 @@ List<Product> demoProducts = [
     isPopular: true,
   ),
   Product(
+    id: 4,
     images: [
       "assets/images/poleraprueba.jpg"
     ],
